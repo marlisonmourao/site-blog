@@ -1,6 +1,6 @@
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
+const { defineDocumentType, makeSource } = require('contentlayer/source-files')
 
-export const Post = defineDocumentType(() => ({
+const Post = defineDocumentType(() => ({
   name: 'Post',
   filePathPattern: '**/*.md',
   fields: {
@@ -17,4 +17,4 @@ export const Post = defineDocumentType(() => ({
   },
 }))
 
-export default makeSource({ contentDirPath: 'posts', documentTypes: [Post] })
+module.exports = makeSource({ contentDirPath: 'posts', documentTypes: [Post] }) 
