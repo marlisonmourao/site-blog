@@ -14,6 +14,9 @@
   },
   "vitest.disableWorkspaceWarning": true,
   "cSpell.words": [
-    "geist"
+    "contentlayer",
+    "Contentlayer",
+    "geist",
+    "pravatar"
   ]
 }
