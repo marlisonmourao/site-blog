@@ -27,7 +27,15 @@ export function BlogList() {
         </div>
       </header>
 
-      <PostCard />
+      <PostCard
+        slug="transformando-seu-negocio-com-o-site-set"
+        title="Transformando seu negócio com o site.set"
+        description="Se você está buscando uma maneira simples e eficaz de vender seus produtos online, o Site ...
+        "
+        image="/assets/post.png"
+        date="20/12/2024"
+        author={{ name: 'Marlison Mourão', avatar: '/assets/avatar.png' }}
+      />
     </div>
   )
 }
