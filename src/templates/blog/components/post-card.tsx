@@ -35,7 +35,7 @@ export function PostCard({
           </div>
           <Image
             src={image}
-            alt={author.name}
+            alt={title}
             width={288}
             height={144}
             className="w-full h-40 object-cover object-center rounded-t-md"
@@ -43,12 +43,12 @@ export function PostCard({
         </div>
 
         <div className="px-2 mt-4 space-y-4">
-          <h2 className="text-heading-sm text-gray-100 line-clamp-3 ">
+          <h2 className="text-heading-sm text-gray-100 line-clamp-3">
             {title}
           </h2>
 
           <p className="line-clamp-3 text-gray-300 text-body-sm">
-            {description}
+            {description} lore
           </p>
 
           <div className="flex items-center gap-3 border-t border-gray-400 py-4">
