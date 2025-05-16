@@ -1,4 +1,5 @@
 import { Avatar } from '@/components/avatar'
+import { Markdown } from '@/components/markdown/markdown'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -27,53 +28,61 @@ export default function Post() {
 
   return (
     <main className="mt-32  text-gray-100">
-      <Breadcrumb>
-        <BreadcrumbList>
-          <BreadcrumbLink asChild className="text-action-sm">
-            <Link href="/blog">Blog</Link>
-          </BreadcrumbLink>
+      <div className="container space-y-12 px-4 md:px-8">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbLink asChild className="text-action-sm">
+              <Link href="/blog">Blog</Link>
+            </BreadcrumbLink>
 
-          <BreadcrumbSeparator />
+            <BreadcrumbSeparator />
 
-          <BreadcrumbItem>
-            <span className="text-blue-200 text-action-sm">{post?.title}</span>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+            <BreadcrumbItem>
+              <span className="text-blue-200 text-action-sm">
+                {post?.title}
+              </span>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 lg:gap-12">
-        <article className="bg-gray-600 rounded-lg overflow-hidden border-gray-400 border-[1px]">
-          <figure className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
-            <Image
-              src={post?.image ?? ''}
-              alt={post?.title ?? ''}
-              fill
-              className="object-cover"
-            />
-          </figure>
-
-          <header className="p-4 md:p-6 lg:p-12 pb-8">
-            <h1 className="mb-6 text-balance text-heading-lg md:text-heading-xl lg:text-heading-xl">
-              {post?.title}
-            </h1>
-
-            <Avatar.Container>
-              <Avatar.Image
-                src={post?.author.avatar ?? ''}
-                alt={post?.author.name ?? ''}
-                width={40}
-                height={40}
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 lg:gap-12">
+          <article className="bg-gray-600 rounded-lg overflow-hidden border-gray-400 border-[1px]">
+            <figure className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
+              <Image
+                src={post?.image ?? ''}
+                alt={post?.title ?? ''}
+                fill
+                className="object-cover"
               />
-              <Avatar.Content>
-                <Avatar.Title>{post?.author.name}</Avatar.Title>
-                <Avatar.Description>
-                  Publicado em{' '}
-                  <time dateTime={publishedDate}>{publishedDate}</time>
-                </Avatar.Description>
-              </Avatar.Content>
-            </Avatar.Container>
-          </header>
-        </article>
+            </figure>
+
+            <header className="p-4 md:p-6 lg:p-12 pb-8 mt-8 md:mt-12">
+              <h1 className="mb-8 text-balance text-heading-lg md:text-heading-xl lg:text-heading-xl">
+                {post?.title}
+              </h1>
+
+              <Avatar.Container>
+                <Avatar.Image
+                  src={post?.author.avatar ?? ''}
+                  alt={post?.author.name ?? ''}
+                  width={40}
+                  height={40}
+                />
+                <Avatar.Content>
+                  <Avatar.Title>{post?.author.name}</Avatar.Title>
+                  <Avatar.Description>
+                    Publicado em{' '}
+                    <time dateTime={publishedDate}>{publishedDate}</time>
+                  </Avatar.Description>
+                </Avatar.Content>
+              </Avatar.Container>
+            </header>
+
+            <div className="prose prose-insert max-w-none px-4 mt-6 md:px-6 lg:px-12">
+              <Markdown content={post?.body.raw ?? ''} />
+            </div>
+          </article>
+        </div>
       </div>
     </main>
   )
