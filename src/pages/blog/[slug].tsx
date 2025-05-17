@@ -65,8 +65,7 @@ export default function Post() {
                 <Avatar.Image
                   src={post?.author.avatar ?? ''}
                   alt={post?.author.name ?? ''}
-                  width={40}
-                  height={40}
+                  size="sm"
                 />
                 <Avatar.Content>
                   <Avatar.Title>{post?.author.name}</Avatar.Title>
