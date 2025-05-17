@@ -1,5 +1,4 @@
 import {
-  CallToAction,
   CustomerStoreSection,
   FeatureSection,
   HeroSection,
@@ -15,8 +14,6 @@ export function LandingPage() {
       <SupportSection />
 
       <CustomerStoreSection />
-
-      <CallToAction />
     </article>
   )
 }
