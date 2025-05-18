@@ -9,21 +9,17 @@ import {
 } from '@/components/ui/breadcrumb'
 import { Button } from '@/components/ui/button'
 import { useShare } from '@/hooks'
-import { allPosts } from 'contentlayer/generated'
+import { Post } from 'contentlayer/generated'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 
-export function PostPage() {
-  const router = useRouter()
-  const { slug } = router.query
+export type PostPageProps = {
+  post: Post
+}
 
-  const post = allPosts.find(
-    post => post.slug.toLowerCase() === slug?.toString().toLowerCase()
-  )
-
+export function PostPage({ post }: PostPageProps) {
   const { shareButtons } = useShare({
-    url: `https://site.com/blog/${post?.slug}`,
+    url: `https://site.com/blog/${post.slug}`,
     title: post?.title,
     text: post?.description,
   })
