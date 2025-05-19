@@ -41,7 +41,7 @@ Um blog moderno e elegante construído com Next.js 14, TypeScript e Tailwind CSS
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/site-blog.git
+git clone https://github.com/marlisonmourao/site-blog.git
 ```
 
 2. Instale as dependências
