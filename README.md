@@ -1,40 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 Blog Next.js
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+</div>
+
+## 📝 Sobre o Projeto
+
+Um blog moderno e elegante construído com Next.js 14, TypeScript e Tailwind CSS. Este projeto implementa as melhores práticas de desenvolvimento web, oferecendo uma experiência de usuário excepcional e performance otimizada.
+
+## ✨ Características
+
+- ⚡ **Performance Otimizada**: Utilizando as últimas features do Next.js 14
+- 🎨 **Design Moderno**: Interface limpa e responsiva com Tailwind CSS
+- 📱 **Totalmente Responsivo**: Experiência perfeita em todos os dispositivos
+- 🔍 **SEO Otimizado**: Estrutura otimizada para mecanismos de busca
+- 🚀 **App Router**: Utilizando a nova estrutura de diretórios do Next.js
+- 💾 **TypeScript**: Código tipado e mais seguro
+- 🎯 **Componentes Reutilizáveis**: Arquitetura modular e escalável
+
+## 🛠️ Tecnologias
+
+- [Next.js 14](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+
+## 🚀 Começando
+
+### Pré-requisitos
+
+- Node.js 18.17 ou superior
+- npm ou yarn
+
+### Instalação
+
+1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/site-blog.git
+```
+
+2. Instale as dependências
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. Execute o projeto em desenvolvimento
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Acesse `http://localhost:3000`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 📁 Estrutura do Projeto
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+src/
+├── app/                 # App Router do Next.js
+├── components/         # Componentes reutilizáveis
+├── templates/         # Templates de páginas
+└── styles/           # Estilos globais
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🤝 Contribuindo
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
+3. Faça o Commit das suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Faça o Push para a Branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-## Learn More
+## 📝 Licença
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 👨‍💻 Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Marlison Mourao** - [GitHub](https://github.com/marlisonmourao)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+<div align="center">
+  <sub>Construído com ❤️ por Marlison Mourao</sub>
+</div>
